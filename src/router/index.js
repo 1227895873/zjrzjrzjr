@@ -12,7 +12,6 @@ const routes = [
       default: Index,
     }
   },
-  { path: '/index', redirect: '/' },
   {
     path: '/user', name: 'user', component: User,
     meta: {
