@@ -2,18 +2,14 @@
 //router 路由管理者
 import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router';// 创建路由实例并传递 `routes` 配置const router = createRouter({// 内部提供了 history 模式的实现。为了简单起见，我们在这里使用 hash 模式。
 //创建路由 route
-import Index from '../views/static/index.vue'
+import Index from '../views/static/login.vue'
 import User from '../views/static/user.vue'
 import Info from '@/views/static/info.vue'
-import Footer from '@/layout/footer.vue'
-import Header from '@/layout/header.vue'
 import LayoutAdmin from '@/layout/admin/index.vue'
 const routes = [
   {
     path: '/', name: 'home', components: {
       default: Index,
-      Footer,//命名视图
-      Header
     }
   },
   { path: '/index', redirect: '/' },
