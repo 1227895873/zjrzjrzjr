@@ -3,7 +3,7 @@ import instance from "./axios";
 const userLogin=(data)=>{
   //返回Promise对象
  return instance.request({
-      url:'api/mobile/elogin', //fullpath=baseURL+url  http://api.jqrjq.cn/api/mobile/elogin
+      url:'https://api.jqrjq.cn/api/mobile/elogin', //fullpath=baseURL+url  http://api.jqrjq.cn/api/mobile/elogin
       method:'post',
       data,
     
